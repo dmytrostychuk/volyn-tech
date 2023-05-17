@@ -1,3 +1,10 @@
+const navBarBtn = document.querySelector('.navar__button');
+const menu = document.querySelector('.menu');
+
+navBarBtn.addEventListener('click', () => {
+  menu.classList.toggle('menu--active');
+});
+
 opened = false;
 window.onload = function () {
   var btn = document.getElementsByTagName('button')[0];
