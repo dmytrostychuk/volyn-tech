@@ -1,0 +1,22 @@
+.menu {
+	position: absolute;
+	width: 100%;
+	transform: translateY(-150%);
+	background-color: #6b6d6f;
+  transition: transform 0.6s ease-in-out;
+}
+
+.menu--active {
+	position: absolute;
+	transform: translateY(0);
+	transition: transform 0.6s ease-in-out;
+}
+
+.menu__wrapper {
+	position: relative;
+}
+
+.navbar__list {
+	color: #d3d3d3;
+	list-style: none;
+}

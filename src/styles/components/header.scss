@@ -1,0 +1,48 @@
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+}
+
+.header__wrapper {
+  z-index: 2;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.header__inner {
+  z-index: 2;
+	position: relative;
+	background-color: #ffffff;
+}
+
+.header__container {
+  z-index: 3;
+  position: relative;
+  display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 0 auto;
+  max-width: $max-container-width;
+	padding: 17px 20px;
+
+  background-color: #ffffff;
+
+  @include mq($from: phablet) {
+    padding: 0 20px;
+  }
+
+  @include mq($from: tablet) {
+    padding: 0 30px;
+  }
+
+  @include mq($from: tablet-wide) {
+  }
+
+  @include mq($from: desktop) {
+  }
+}
+
+.header__title {
+font-size: 15px;
+}
