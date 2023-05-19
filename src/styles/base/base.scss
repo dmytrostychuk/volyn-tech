@@ -2,8 +2,13 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Roboto;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: bisque;
+}
+
+a {
+  text-decoration: none;
+  
 }
 
 .container {

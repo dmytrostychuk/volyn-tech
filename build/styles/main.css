@@ -382,17 +382,21 @@ template {
 }
 
 @font-face {
-  font-family: "Roboto";
+  font-family: "SourceSansPro";
   font-style: normal;
-  font-weight: 300;
-  src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.woff2") format("woff2"), url("../fonts/Roboto-Regular.woff") format("woff"), url("../fonts/Roboto-Regular.ttf") format("ttf");
+  font-weight: 400;
+  src: local("SourceSansPro Regular"), local("SourceSansPro-Regular"), url("../fonts/SourceSansPro-Regular.ttf") format("ttf");
 }
 body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: Roboto;
+  font-family: "Source Sans Pro", sans-serif;
   background-color: bisque;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -445,7 +449,7 @@ body {
   font-size: 15px;
 }
 
-.navar__button {
+.navbar__button {
   border: none;
   background: none;
   width: 30px;
@@ -459,13 +463,13 @@ body {
   transition: opacity 0.5s ease;
   outline: none;
 }
-.navar__button:hover {
+.navbar__button:hover {
   opacity: 1;
   -webkit-filter: none;
           filter: none;
 }
 
-.navar__button span {
+.navbar__button span {
   display: block;
   width: 100%;
   height: 1px;
@@ -480,7 +484,7 @@ body {
   transition: transform 0.5s ease, border-color 0.5s ease 0.3s, -webkit-transform 0.5s ease;
 }
 
-.navar__button span:before {
+.navbar__button span:before {
   content: "";
   position: absolute;
   top: 0;
@@ -500,7 +504,7 @@ body {
           animation-fill-mode: forwards;
 }
 
-.navar__button span:after {
+.navbar__button span:after {
   content: "";
   position: absolute;
   top: 0;
@@ -520,12 +524,12 @@ body {
           animation-fill-mode: forwards;
 }
 
-.navar__button.opened span {
+.navbar__button.opened span {
   border-color: transparent;
   transition: border-color 0.3s ease;
 }
 
-.navar__button.opened span:before {
+.navbar__button.opened span:before {
   -webkit-animation-name: topLineCross;
           animation-name: topLineCross;
   -webkit-animation-duration: 0.6s;
@@ -536,7 +540,7 @@ body {
           animation-fill-mode: forwards;
 }
 
-.navar__button.opened span:after {
+.navbar__button.opened span:after {
   -webkit-animation-name: bottomLineCross;
           animation-name: bottomLineCross;
   -webkit-animation-duration: 0.6s;
@@ -665,7 +669,7 @@ body {
   width: 100%;
   -webkit-transform: translateY(-150%);
           transform: translateY(-150%);
-  background-color: #6b6d6f;
+  background-color: #626364;
   transition: -webkit-transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
@@ -685,34 +689,74 @@ body {
 }
 
 .navbar__list {
-  color: #d3d3d3;
   list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
+.navbar__link {
+  display: block;
+  padding: 16px 20px;
+  color: #d3d3d3;
+}
+.navbar__link:hover {
+  color: #e4e2e2;
+}
 @media (min-width: 560px) {
   .container {
     padding: 0 20px;
   }
   .header__container {
-    padding: 0 20px;
+    padding: 17px 20px;
   }
 }
-
 @media (min-width: 768px) {
   .container {
     padding: 0 30px;
   }
-  .header__container {
-    padding: 0 30px;
-  }
 }
-
 @media (min-width: 1024px) {
   .container {
     padding: 0 65px;
   }
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar__button {
+    display: none;
+  }
+  .menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    background-color: #ffffff;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .menu--active {
+    display: flex;
+    justify-content: end;
+  }
+  .navbar__list {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+  .contain {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px;
+  }
+  .navbar__link {
+    color: #000000;
+  }
+  .navbar__link:hover {
+    color: #e4e2e2;
+  }
 }
-
 @media (min-width: 1248px) {
   .container {
     padding: 0 130px;

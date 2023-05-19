@@ -2,6 +2,12 @@
   background-color: #ffffff;
   position: fixed;
   width: 100%;
+
+  @include mq($from: tablet-wide) {
+		display: flex;
+    justify-content: space-between;
+    align-items: center;
+	}
 }
 
 .header__wrapper {
@@ -29,11 +35,10 @@
   background-color: #ffffff;
 
   @include mq($from: phablet) {
-    padding: 0 20px;
+    padding: 17px 20px;
   }
 
   @include mq($from: tablet) {
-    padding: 0 30px;
   }
 
   @include mq($from: tablet-wide) {

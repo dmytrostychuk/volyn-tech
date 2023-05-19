@@ -2,14 +2,28 @@
 	position: absolute;
 	width: 100%;
 	transform: translateY(-150%);
-	background-color: #6b6d6f;
+	background-color: #626364;
   transition: transform 0.6s ease-in-out;
+
+	@include mq($from: tablet-wide) {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		width: auto;
+		background-color: #ffffff;
+		transform: translateY(0);
+  }
 }
 
 .menu--active {
 	position: absolute;
 	transform: translateY(0);
 	transition: transform 0.6s ease-in-out;
+
+	@include mq($from: tablet-wide) {
+display: flex;
+justify-content: end;
+  }
 }
 
 .menu__wrapper {
@@ -17,6 +31,21 @@
 }
 
 .navbar__list {
-	color: #d3d3d3;
 	list-style: none;
+	padding-left: 0;
+	margin: 0;
+
+	@include mq($from: tablet-wide) {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+	}
+}
+
+.contain {
+	@include mq($from: tablet-wide) {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 30px;
+	}
 }
