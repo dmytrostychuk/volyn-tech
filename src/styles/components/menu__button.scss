@@ -17,7 +17,7 @@
 		filter: none;
 	}
 
-  @include mq($from: tablet-wide) {
+  @include mq($from: tablet) {
 		display: none;
   }
 }
