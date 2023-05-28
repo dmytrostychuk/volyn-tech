@@ -2,13 +2,17 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: bisque;
 }
 
 a {
   text-decoration: none;
   
+}
+
+.main {
+  margin-top: 80px;
 }
 
 .container {

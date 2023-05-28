@@ -1,30 +1,42 @@
 .header {
+  z-index: 1;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
 
   @include mq($from: tablet) {
-		display: flex;
-    justify-content: space-between;
-    align-items: center;
 	}
 }
 
 .header__wrapper {
-  z-index: 2;
-	position: relative;
-	background-color: #ffffff;
+  box-shadow: 0 1px 15px rgba(0,0,0, .15);
+
+	@include mq($from: tablet) {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+	}
 }
+
 
 .header__inner {
   z-index: 2;
 	position: relative;
 	background-color: #ffffff;
+
+  @include mq($from: tablet) {
+		padding-left: 30px;
+	}
+
+  @include mq($from: desktop) {
+    padding-left: 50px;
+	}
 }
 
 .header__container {
   z-index: 3;
   position: relative;
+  padding-right: 15px;
   display: flex;
 	justify-content: space-between;
 	align-items: center;
