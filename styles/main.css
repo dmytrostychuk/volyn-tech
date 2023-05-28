@@ -391,12 +391,16 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  margin: 0;
   font-family: "Source Sans Pro", sans-serif;
-  background-color: bisque;
 }
 
 a {
   text-decoration: none;
+}
+
+.main {
+  margin-top: 80px;
 }
 
 .container {
@@ -417,15 +421,13 @@ a {
 }
 
 .header {
+  z-index: 1;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
 }
-
 .header__wrapper {
-  z-index: 2;
-  position: relative;
-  background-color: #ffffff;
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
 }
 
 .header__inner {
@@ -437,6 +439,7 @@ a {
 .header__container {
   z-index: 3;
   position: relative;
+  padding-right: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -700,19 +703,67 @@ a {
 .navbar__link:hover {
   color: #e4e2e2;
 }
+
+.product {
+  position: relative;
+  color: #3C4852;
+  margin-top: 80px;
+}
+
+.product__content {
+  transition: 0.6s ease-in-out;
+}
+.product__content:hover {
+  transition: 0.6s ease-in-out;
+}
+.product__content:hover svg {
+  transition: 0.6s ease-in-out;
+  fill: #E74A51;
+}
+
+.product__bg-svg {
+  position: absolute;
+  right: 10%;
+  width: 70vw;
+  height: auto;
+  fill: #FFCC80;
+  transition: 0.6s ease-in-out;
+}
+
+.product__title {
+  position: relative;
+  font-size: 13vw;
+  font-weight: 600;
+  padding-top: 40px;
+}
+
+.product__text {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  letter-spacing: normal;
+}
+
 @media (min-width: 560px) {
   .container {
     padding: 0 20px;
   }
+  .product__title {
+    font-size: 9vw;
+  }
 }
+
 @media (min-width: 768px) {
   .container {
     padding: 0 30px;
   }
-  .header {
+  .header__wrapper {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 100%;
+  }
+  .header__inner {
+    padding-left: 30px;
   }
   .navbar__button {
     display: none;
@@ -722,6 +773,7 @@ a {
     display: flex;
     flex-direction: row;
     width: auto;
+    padding-right: 20px;
     align-items: center;
     background-color: #ffffff;
     -webkit-transform: translateY(0);
@@ -736,12 +788,6 @@ a {
     display: flex;
     flex-direction: row;
   }
-  .contain {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0 30px;
-  }
   .navbar__link {
     color: #000000;
   }
@@ -749,13 +795,21 @@ a {
     color: #e4e2e2;
   }
 }
+
 @media (min-width: 1024px) {
   .container {
     padding: 0 65px;
   }
 }
+
 @media (min-width: 1248px) {
   .container {
     padding: 0 130px;
+  }
+  .header__inner {
+    padding-left: 50px;
+  }
+  .menu {
+    padding-right: 40px;
   }
 }
