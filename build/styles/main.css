@@ -721,13 +721,20 @@ a {
   fill: #E74A51;
 }
 
-.product__bg-svg {
+.product__bg-svg, .product__bg-img {
   position: absolute;
   right: 10%;
-  width: 70vw;
   height: auto;
   fill: #FFCC80;
   transition: 0.6s ease-in-out;
+}
+
+.product__bg-svg {
+  width: 70vw;
+}
+
+.product__bg-img {
+  display: none;
 }
 
 .product__title {
@@ -735,6 +742,7 @@ a {
   font-size: 13vw;
   font-weight: 600;
   padding-top: 40px;
+  text-align: end;
 }
 
 .product__text {
@@ -747,6 +755,9 @@ a {
 @media (min-width: 560px) {
   .container {
     padding: 0 20px;
+  }
+  .product__bg-svg {
+    width: 45vw;
   }
   .product__title {
     font-size: 9vw;
@@ -793,6 +804,16 @@ a {
   }
   .navbar__link:hover {
     color: #e4e2e2;
+  }
+  .product__bg-img {
+    display: block;
+    width: 35vw;
+    right: 5%;
+  }
+  .product__title {
+    width: 480px;
+    font-size: 8vw;
+    text-align: start;
   }
 }
 
