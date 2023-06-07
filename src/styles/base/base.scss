@@ -29,11 +29,11 @@ a {
   }
 
   @include mq($from: tablet-wide) {
-    padding: 0 65px;
+    padding: 0 40px;
   }
 
   @include mq($from: desktop) {
-    padding: 0 130px;
+    padding: 0 50px;
   }
 }
 
@@ -42,6 +42,14 @@ a {
 
   &--no-margin {
     margin-bottom: 0;
+  }
+}
+
+.mobile-none {
+  display: none;
+
+  @include mq($from: tablet) {
+    display: block;
   }
 }
 
