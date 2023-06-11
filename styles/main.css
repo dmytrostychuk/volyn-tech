@@ -393,6 +393,7 @@ body {
   min-height: 100vh;
   margin: 0;
   font-family: "Source Sans Pro", sans-serif;
+  height: 20000px;
 }
 
 a {
@@ -405,7 +406,7 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
   padding: 0 20px;
 }
 
@@ -425,7 +426,7 @@ a {
 }
 
 .header {
-  z-index: 1;
+  z-index: 10;
   background-color: #ffffff;
   position: fixed;
   width: 100%;
@@ -448,7 +449,7 @@ a {
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 1600px;
   background-color: #ffffff;
 }
 .header__title {
@@ -711,7 +712,13 @@ a {
 .product {
   position: relative;
   color: #3C4852;
-  margin-top: 80px;
+  height: 100vh;
+  margin-top: -80px;
+}
+
+.product__container {
+  margin: 0 auto;
+  max-width: 1600px;
 }
 
 .product__content {
@@ -725,28 +732,24 @@ a {
   fill: #E74A51;
 }
 
-.product__bg-svg, .product__bg-img {
+.product__bg {
   position: absolute;
-  right: 10%;
-  height: auto;
-  fill: #FFCC80;
-  transition: 0.6s ease-in-out;
-}
-
-.product__bg-svg {
-  width: 70vw;
-}
-
-.product__bg-img {
-  display: none;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .product__title {
   position: relative;
   font-size: 13vw;
   font-weight: 600;
-  padding-top: 40px;
+  padding-top: 80px;
   text-align: end;
+  margin-top: 80px;
+  color: #ffffff;
 }
 
 .product__text {
@@ -756,7 +759,13 @@ a {
   line-height: 25px;
   font-weight: normal;
   letter-spacing: normal;
-  width: 50vw;
+  width: 30%;
+}
+
+.z-index {
+  z-index: 20;
+  background-color: #E74A51;
+  position: relative;
 }
 
 @media (min-width: 560px) {
@@ -765,9 +774,6 @@ a {
   }
   .product__content {
     padding: 0 20px;
-  }
-  .product__bg-svg {
-    width: 45vw;
   }
   .product__title {
     font-size: 9vw;
@@ -821,11 +827,6 @@ a {
   .product__content {
     padding: 0 30px;
   }
-  .product__bg-img {
-    display: block;
-    width: 35vw;
-    right: 5%;
-  }
   .product__title {
     width: 480px;
     font-size: 8vw;
@@ -840,12 +841,6 @@ a {
   }
   .product__content {
     padding: 0 40px;
-  }
-  .product__bg-svg {
-    width: 40vw;
-  }
-  .product__bg-img {
-    width: 30vw;
   }
   .product__title {
     width: 700px;
@@ -866,13 +861,8 @@ a {
   .product__content {
     padding: 0 50px;
   }
-  .product__bg-svg {
-    width: 30vw;
-  }
-  .product__bg-img {
-    width: 25vw;
-  }
   .product__title {
     width: 50vw;
+    font-size: 98px;
   }
 }
