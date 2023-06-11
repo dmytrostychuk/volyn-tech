@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
 Where ever you're wanting to use a z-index value, 
 name it the same as your class and add in it into your variables/setting file, 
@@ -721,8 +722,22 @@ a {
   max-width: 1600px;
 }
 
+.product__bg {
+  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.6), #292b2c), url(../img/dried-fruits.jpg);
+  background-size: cover; /* або інше значення, як ви вважаєте за потрібне */
+  background-position: center;
+  width: 300px; /* або інша ширина, яку ви хочете встановити */
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
 .product__content {
   transition: 0.6s ease-in-out;
+  color: #ffffff;
 }
 .product__content:hover {
   transition: 0.6s ease-in-out;
@@ -732,22 +747,11 @@ a {
   fill: #E74A51;
 }
 
-.product__bg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .product__title {
   position: relative;
   font-size: 13vw;
   font-weight: 600;
   padding-top: 80px;
-  text-align: end;
   margin-top: 80px;
   color: #ffffff;
 }
@@ -760,10 +764,12 @@ a {
   font-weight: normal;
   letter-spacing: normal;
   width: 30%;
+  line-height: 26px;
+  letter-spacing: 0.05em;
 }
 
 .z-index {
-  z-index: 20;
+  z-index: 1;
   background-color: #E74A51;
   position: relative;
 }
@@ -830,8 +836,7 @@ a {
   .product__title {
     width: 480px;
     font-size: 8vw;
-    text-align: start;
-    font-weight: 700;
+    font-weight: 600;
   }
 }
 

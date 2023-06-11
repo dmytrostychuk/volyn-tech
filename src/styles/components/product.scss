@@ -10,8 +10,22 @@
 	max-width: $max-container-width;
 }
 
+.product__bg {
+	background-image: linear-gradient(0deg,rgba(51,51,51,.6),#292b2c),url(../img/dried-fruits.jpg);
+  background-size: cover; /* або інше значення, як ви вважаєте за потрібне */
+  background-position: center;
+	width: 300px; /* або інша ширина, яку ви хочете встановити */
+  height: 200px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100vh;
+}
+
 .product__content {
 	transition: 0.6s ease-in-out;
+	color: #ffffff;
 
 	&:hover {
 		transition: 0.6s ease-in-out;
@@ -38,66 +52,12 @@
   }
 }
 
-.product__bg {
-	position: absolute;
-	left: 0;
-	top: 0;
-	width: 100%;
-	height: 100%;
-	background-repeat: no-repeat;
-	background-size: cover;
-}
-
-
-// .product__bg-svg, .product__bg-img {
-// 	position: absolute;
-// 	height: auto;
-// 	fill: #FFCC80;
-// 	transition: 0.6s ease-in-out;
-// }
-
-// .product__bg-svg {
-// 	width: 70vw;
-
-// 	@include mq($from: phablet) {
-// 		width: 45vw;
-// 	}
-
-// 	@include mq($from: tablet-wide) {
-// 		width: 40vw;
-// 	}
-
-// 	@include mq($from: desktop) {
-// 		width: 30vw;
-// 		max-width: 520px;
-// 	}
-// }
-
-// .product__bg-img {
-// 	display: none;
-
-// 	@include mq($from: tablet) {
-// 		display: block;
-// 		width: 35vw;
-// 		right: 10%;
-// 	}
-
-// 	@include mq($from: tablet-wide) {
-// 		width: 30vw;
-// 	}
-
-// 	@include mq($from: desktop) {
-// 		width: 25vw;
-// 		max-width: 450px;
-// 	}
-// }
 
 .product__title {
 	position: relative;
 	font-size: 13vw;
 	font-weight: 600;
 	padding-top: 80px;
-	text-align: end;
 	margin-top: 80px;
 	color: #ffffff;
 	
@@ -110,8 +70,8 @@
 	@include mq($from: tablet) {
 		width: 480px;
 		font-size: 8vw;
-		text-align: start;
-		font-weight: 700;
+		font-weight: 600;
+
 	}
 
 	@include mq($from: tablet-wide) {
@@ -133,10 +93,12 @@
 	font-weight: normal;
 	letter-spacing: normal;
 	width: 30%;
+	line-height: 26px;
+	letter-spacing: .05em;
 }
 
 .z-index {
-	z-index: 20;
+	z-index: 1;
 	background-color: #E74A51;
 	position: relative;
 }
