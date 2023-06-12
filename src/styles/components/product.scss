@@ -1,4 +1,5 @@
 .product {
+	z-index: -1;
 	position: relative;
 	color: #3C4852;
 	height: 100vh;
@@ -11,7 +12,7 @@
 }
 
 .product__bg {
-	background-image: linear-gradient(0deg,rgba(51,51,51,.6),#292b2c),url(../img/dried-fruits.jpg);
+	background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%),url(../img/dried-fruits.jpg);
   background-size: cover; /* або інше значення, як ви вважаєте за потрібне */
   background-position: center;
 	width: 300px; /* або інша ширина, яку ви хочете встановити */
