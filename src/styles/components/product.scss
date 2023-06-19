@@ -24,13 +24,16 @@
 }
 
 .product__gallery {
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 
 	@include mq($from: tablet) {
     width: 53%;
 		float: left;
   }
+}
+
+.product__photo {
 }
 
 .product__text {
