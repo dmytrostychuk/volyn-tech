@@ -1,13 +1,13 @@
 var swiper = new Swiper('.mySwiper', {
   // loop: true,
-  spaceBetween: 10,
+  spaceBetween: 0,
   slidesPerView: 4,
 
   // watchSlidesProgress: true,
 
   breakpoints: {
     '@0.00': {
-      slidesPerView: 2,
+      slidesPerView: 3,
     },
     '@0.75': {
       slidesPerView: 3,
