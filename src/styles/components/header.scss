@@ -3,10 +3,18 @@
   background-color: #ffffff;
   position: fixed;
   width: 100%;
- 
+  transition: 0.5s ease;
 
   @include mq($from: tablet) {
 	}
+}
+
+.header__scroll { 
+  background-color: #323336;
+  z-index: 20;
+  width: 100%;
+  color: #ffffff;
+  transition: 0.5s ease;
 }
 
 .header__wrapper {
@@ -16,6 +24,8 @@
 		display: flex;
 		justify-content: space-between;
 		width: 100%;
+    max-width: 1700px;
+    margin: 0 auto;
 	}
 }
 
@@ -27,6 +37,7 @@
 
   @include mq($from: tablet) {
 		padding-left: 30px;
+    background-color: inherit;
 	}
 
   @include mq($from: desktop) {
@@ -50,6 +61,7 @@
   }
 
   @include mq($from: tablet) {
+    background-color: inherit;
   }
 
   @include mq($from: tablet-wide) {

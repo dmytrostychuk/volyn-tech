@@ -60,6 +60,7 @@
 	padding-top: 80px;
 	margin-top: 80px;
 	color: #ffffff;
+	padding-top: 30vw;
 	
 
 	@include mq($from: phablet) {
@@ -71,7 +72,7 @@
 		width: 480px;
 		font-size: 8vw;
 		font-weight: 600;
-
+		padding-top: 20vw;
 	}
 
 	@include mq($from: tablet-wide) {

@@ -26,6 +26,10 @@
 	font-size: 26px;
 	font-weight: 600;
 	line-height: 1.3em;
+
+	@include mq($from: tablet-wide) {
+		font-size: 35px;
+	}
 }
 
 .product__gallery {
@@ -40,7 +44,8 @@
 	@include mq($from: tablet-wide) {
     width: 40%;
   }
-
+	
+	
 	
 }
 
@@ -56,6 +61,9 @@
 		margin-top: 25px;
 	}
 
+	@include mq($from: tablet-wide) {
+		font-size: 18px;
+	}
 	
 }
 
@@ -117,3 +125,5 @@
 		display: none;
 	}
 }
+
+
