@@ -401,10 +401,6 @@ a {
   text-decoration: none;
 }
 
-.main {
-  margin-top: 80px;
-}
-
 .container {
   margin: 0 auto;
   max-width: 1600px;
@@ -428,7 +424,6 @@ a {
 
 .header {
   z-index: 10;
-  background-color: #ffffff;
   position: fixed;
   width: 100%;
   transition: 0.5s ease;
@@ -439,29 +434,34 @@ a {
   width: 100%;
   color: #ffffff;
   transition: 0.5s ease;
-}
-
-.header__wrapper {
   box-shadow: 0 1px 15px rgba(0, 0, 0, 0.15);
 }
 
+.header__wrapper {
+  align-items: center;
+}
 .header__inner {
   z-index: 2;
   position: relative;
-  background-color: #ffffff;
 }
 
 .header__container {
   z-index: 3;
   position: relative;
-  padding-right: 15px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
+  padding: 20px;
   max-width: 1600px;
-  background-color: #ffffff;
+  transition: 1s ease-in-out;
 }
+
+.header--active {
+  background-color: #323336;
+  transition: 0.3s ease-in-out;
+}
+
 .header__title {
   font-size: 15px;
 }
@@ -493,7 +493,7 @@ a {
   position: absolute;
   top: 0;
   left: 0;
-  border-top: 1px solid #000000;
+  border-top: 1px solid #ffffff;
   -webkit-transform: translateY(11px);
           transform: translateY(11px);
   transition: border-color 0.5s ease 0.3s, -webkit-transform 0.5s ease;
@@ -508,7 +508,7 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: #000000;
+  background-color: #ffffff;
   -webkit-transform: translateY(-22px);
           transform: translateY(-22px);
   -webkit-animation-name: topLineBurger;
@@ -528,7 +528,7 @@ a {
   left: 0;
   width: 100%;
   height: 1px;
-  background: #000;
+  background: #ffffff;
   -webkit-transform: translateY(22px);
           transform: translateY(22px);
   -webkit-animation-name: bottomLineBurger;
@@ -902,13 +902,14 @@ a {
     width: 100%;
     max-width: 1700px;
     margin: 0 auto;
+    padding: 20px 30px;
   }
   .header__inner {
     padding-left: 30px;
     background-color: inherit;
   }
   .header__container {
-    background-color: inherit;
+    padding: 20px 30px;
   }
   .navbar__button {
     display: none;
@@ -932,9 +933,6 @@ a {
     position: relative;
     display: flex;
     flex-direction: row;
-  }
-  .navbar__link {
-    color: #000000;
   }
   .navbar__link:hover {
     color: #e4e2e2;

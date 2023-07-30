@@ -9,7 +9,6 @@
 	}
 
 	@include mq($from: tablet) {
-		color: #000000;
 
 		&:hover {
 			color: #e4e2e2;

@@ -1,8 +1,10 @@
 const navBarBtn = document.querySelector('.navbar__button');
 const menu = document.querySelector('.menu');
+const headerContainer = document.querySelector('.header__container');
 
 navBarBtn.addEventListener('click', () => {
   menu.classList.toggle('menu--active');
+  headerContainer.classList.toggle('header--active');
 });
 
 opened = false;

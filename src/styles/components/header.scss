@@ -1,13 +1,15 @@
 .header {
   z-index: 10;
-  background-color: #ffffff;
   position: fixed;
   width: 100%;
+  
   transition: 0.5s ease;
 
   @include mq($from: tablet) {
 	}
 }
+
+
 
 .header__scroll { 
   background-color: #323336;
@@ -15,10 +17,11 @@
   width: 100%;
   color: #ffffff;
   transition: 0.5s ease;
+  box-shadow: 0 1px 15px rgba(0,0,0,.15);
 }
 
 .header__wrapper {
-  box-shadow: 0 1px 15px rgba(0,0,0, .15);
+  align-items: center;
 
 	@include mq($from: tablet) {
 		display: flex;
@@ -26,14 +29,18 @@
 		width: 100%;
     max-width: 1700px;
     margin: 0 auto;
+    padding: 20px 30px;
 	}
+
+  @include mq($from: tablet) {
+    
+  }
 }
 
 
 .header__inner {
   z-index: 2;
 	position: relative;
-	background-color: #ffffff;
 
   @include mq($from: tablet) {
 		padding-left: 30px;
@@ -48,27 +55,27 @@
 .header__container {
   z-index: 3;
   position: relative;
-  padding-right: 15px;
   display: flex;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0 auto;
+  padding: 20px;
   max-width: $max-container-width;
-
-  background-color: #ffffff;
+  transition: 1s ease-in-out;
+  
+  
 
   @include mq($from: phablet) {
   }
 
   @include mq($from: tablet) {
-    background-color: inherit;
+    padding: 20px 30px;
   }
+}
 
-  @include mq($from: tablet-wide) {
-  }
-
-  @include mq($from: desktop) {
-  }
+.header--active {
+  background-color: #323336;
+  transition: .3s ease-in-out;
 }
 
 .header__title {
