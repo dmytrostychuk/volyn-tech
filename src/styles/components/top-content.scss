@@ -3,7 +3,6 @@
 	position: relative;
 	color: #3C4852;
 	height: 100vh;
-	margin-top: -80px;
 }
 
 .top-content__container {
@@ -23,9 +22,13 @@
 	height: 100vh;
 }
 
-.top-content__content {
+.top-content__text {
 	transition: 0.6s ease-in-out;
 	color: #ffffff;
+	padding: 0 20px;
+	
+	max-width: 1700px;
+	margin: 0 auto;
 
 	&:hover {
 		transition: 0.6s ease-in-out;
@@ -36,7 +39,6 @@
 	}
 
 	@include mq($from: phablet) {
-    padding: 0 20px;
   }
 
   @include mq($from: tablet) {
@@ -56,11 +58,10 @@
 .top-content__title {
 	position: relative;
 	font-size: 13vw;
+	margin: 0;
 	font-weight: 600;
-	padding-top: 80px;
-	margin-top: 80px;
 	color: #ffffff;
-	padding-top: 30vw;
+	padding-top: 25vh;
 	
 
 	@include mq($from: phablet) {
@@ -72,7 +73,6 @@
 		width: 480px;
 		font-size: 8vw;
 		font-weight: 600;
-		padding-top: 20vw;
 	}
 
 	@include mq($from: tablet-wide) {
@@ -84,20 +84,4 @@
 		width: 50vw;
 		font-size: 98px;
 	}
-}
-
-.top-content__text {
-	z-index: 1;
-	position: relative;
-	font-size: 18px;
-	line-height: 25px;
-	font-weight: normal;
-	letter-spacing: normal;
-	line-height: 26px;
-	letter-spacing: .05em;
-
-	@include mq($from: tablet) {
-		width: 50%;
-	}
-	
 }
