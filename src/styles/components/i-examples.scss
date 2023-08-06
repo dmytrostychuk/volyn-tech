@@ -1,0 +1,104 @@
+.i-examples {
+	padding-top: 40px;
+	background-color: #fafafa;
+}
+
+.i-examples__card-box {
+
+	@include mq($from: tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+}
+
+.i-examples__card {
+	position: relative;
+	display: inline-block;
+	margin-bottom: 30px;
+	overflow: hidden;
+	margin: 0 auto;
+	background-color: #ffffff;
+	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+	@include mq($from: phablet) {
+		width: 60vw;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+
+	@include mq($from: tablet) {
+		width: 25%;
+		margin: 15px;
+	}
+}
+
+.i-examples__container {
+	text-align: center;
+}
+
+.i-examples__img {
+	position: relative;
+	object-fit: cover;
+	
+	@include mq($from: tablet) {
+		object-fit: cover;
+	}
+	
+	img {
+width: 100%;
+height: 100%;
+		@include mq($from: tablet) {
+		}
+	}
+}
+
+.i-examples__img::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 99%;
+	background-image: linear-gradient(90deg,rgba(60,60,64,.7) 100%,#a6a6cd 100%,#00d4ff 100%);
+  opacity: 0.4;
+}
+
+.i-examples__hover-block {
+	padding: 24px;
+	padding-top: 0;
+	
+
+	@include mq($from: tablet) {
+		position: absolute;
+	bottom: -110%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	color: #fff;
+	padding: 10px;
+	transition: bottom 0.3s ease-in-out;
+	}
+	
+}
+
+.i-examples__card:hover .i-examples__hover-block {
+
+	@include mq($from: tablet) {
+		bottom: 0;
+	}
+}
+
+.i-examples__title {
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.i-examples__text {
+	line-height: 1.4em;
+	color: #757575;
+}
+
