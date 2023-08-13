@@ -868,16 +868,18 @@ a {
 
 .i-examples {
   padding-top: 40px;
+  padding-bottom: 40px;
   background-color: #fafafa;
 }
 
 .i-examples__card {
   position: relative;
+  margin: 0 auto;
   margin-bottom: 30px;
   overflow: hidden;
-  margin: 0 auto;
   background-color: #ffffff;
   box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  transition: 0.3s ease-in-out;
 }
 
 .i-examples__container {
@@ -898,7 +900,7 @@ a {
   top: 0;
   left: 0;
   width: 100%;
-  height: 99%;
+  height: 98%;
   background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, #a6a6cd 100%, #00d4ff 100%);
   opacity: 0.4;
 }
@@ -906,6 +908,7 @@ a {
 .i-examples__hover-block {
   position: relative;
   padding: 24px;
+  padding-top: 0px;
 }
 
 .i-examples__title {
@@ -1050,6 +1053,7 @@ a {
     margin: 5px;
   }
   .i-examples__img {
+    height: 100%;
     object-fit: cover;
   }
   .i-examples__hover-block {
@@ -1103,6 +1107,11 @@ a {
   .i-examples__card {
     width: 27%;
     margin: 5px;
+    margin-bottom: 15px;
+    border-radius: 20px 50px 20px 50px;
+  }
+  .i-examples__card:hover {
+    box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
   }
   .i-examples__hover-block {
     position: absolute;
@@ -1115,10 +1124,12 @@ a {
     background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.178) 100%, #a6a6cd 100%, #00d4ff 100%);
   }
   .i-examples__title {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
     color: #ffffff;
-    padding-bottom: 15px;
-    background-color: rgba(60, 60, 64, 0.637);
-    font-size: 24px;
+    padding: 10px 0;
+    font-size: 16px;
     letter-spacing: 1px;
   }
   .i-examples__text {
@@ -1129,22 +1140,31 @@ a {
     height: 100%;
     color: #fff;
     padding: 0px;
-    transition: 0.3s ease-in-out;
-    background-color: rgba(60, 60, 64, 0.637);
+    transition: 0.4s ease-in-out;
+    background-size: cover;
+    padding-top: 60px;
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%);
   }
-  .i-examples__text {
-    position: absolute;
-    bottom: -320px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    padding: 0px;
-    transition: 0.3s ease-in-out;
-    background-color: rgba(60, 60, 64, 0.637);
+  .i-examples__text--berries {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/berries1.jpg);
+  }
+  .i-examples__text--nuts {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/nuts-seeds1.jpg);
+  }
+  .i-examples__text--fruits {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/fruits-1.jpg);
+  }
+  .i-examples__text--herbs {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/herbs-1.jpg);
+  }
+  .i-examples__text--meat {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/fishMeat-1.jpg);
+  }
+  .i-examples__text--vegetables {
+    background-image: linear-gradient(90deg, rgba(60, 60, 64, 0.7) 100%, rgb(166, 166, 205) 100%, rgb(0, 212, 255) 100%), url(../img/vegetables-1.jpg);
   }
   .i-examples__card:hover .i-examples__text {
-    bottom: -74px;
+    bottom: -60px;
   }
 }
 
@@ -1164,5 +1184,17 @@ a {
   .top-content__title {
     width: 50vw;
     font-size: 98px;
+  }
+  .i-examples__title {
+    font-size: 24px;
+    padding: 15px 0;
+  }
+  .i-examples__text {
+    bottom: -400px;
+    padding-top: 100px;
+    font-size: 18px;
+  }
+  .i-examples__card:hover .i-examples__text {
+    bottom: -100px;
   }
 }
