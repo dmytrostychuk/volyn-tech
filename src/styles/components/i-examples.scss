@@ -1,5 +1,6 @@
 .i-examples {
 	padding-top: 40px;
+	padding-bottom: 40px;
 	background-color: #fafafa;
 }
 
@@ -14,11 +15,14 @@
 
 .i-examples__card {
 	position: relative;
+	margin: 0 auto;
 	margin-bottom: 30px;
 	overflow: hidden;
-	margin: 0 auto;
 	background-color: #ffffff;
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+	transition: 0.3s ease-in-out;
+
+	
 
 	@include mq($from: phablet) {
 		width: 60vw;
@@ -34,6 +38,12 @@
 	@include mq($from: tablet-wide) {
 		width: 27%;
 		margin: 5px;
+		margin-bottom: 15px;
+		border-radius: 20px 50px 20px 50px;
+
+		&:hover {
+			box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
+		}
 	}
 }
 
@@ -46,6 +56,7 @@
 	object-fit: cover;
 	
 	@include mq($from: tablet) {
+		height: 100%;
 		object-fit: cover;
 	}
 	
@@ -63,7 +74,7 @@
 	top: 0;
 	left: 0;
 	width: 100%;
-	height: 99%;
+	height: 98%;
 	background-image: linear-gradient(90deg,rgba(60,60,64,.7) 100%,#a6a6cd 100%,#00d4ff 100%);
   opacity: 0.4;
 }
@@ -71,7 +82,7 @@
 .i-examples__hover-block {
 	position: relative;
 	padding: 24px;
-	
+	padding-top: 0px;
 
 	@include mq($from: tablet) {
 		position: absolute;
@@ -96,13 +107,6 @@
 	
 }
 
-// .i-examples__card:hover .i-examples__hover-block {
-
-// 	@include mq($from: tablet) {
-// 		bottom: 0;
-// 	}
-// }
-
 .i-examples__title {
 	font-size: 18px;
 	font-weight: 600;
@@ -117,17 +121,26 @@
 	}
 
 	@include mq($from: tablet-wide) {
+		z-index: 2;
+		position: absolute;
+		width: 100%;
 		color: #ffffff;
-		padding-bottom: 15px;
-		background-color: rgba(60, 60, 64, 0.637);
-		font-size: 24px;
+		padding: 10px 0;
+		font-size: 16px;
 		letter-spacing: 1px;
+	}
+
+	@include mq($from: desktop) {
+		font-size: 24px;
+		padding: 15px 0;
 	}
 }
 
 .i-examples__text {
 	line-height: 1.4em;
 	color: #757575;
+
+	
 
 	@include mq($from: tablet) {
 		padding: 5px;
@@ -143,27 +156,66 @@
 	height: 100%;
 	color: #fff;
 	padding: 0px;
-	transition: 0.3s ease-in-out;
-	background-color: rgba(60, 60, 64, 0.637);
+	transition: .4s ease-in-out;
+	background-size: cover;
+	padding-top: 60px;
+	background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%);
+	
 	}
 
-	@include mq($from: tablet-wide) {
-		position: absolute;
-	bottom: -320px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	padding: 0px;
-	transition: 0.3s ease-in-out;
-	background-color: rgba(60, 60, 64, 0.637);
+	@include mq($from: desktop) {
+		bottom: -400px;
+		padding-top: 100px;
+		font-size: 18px;
 	}
 }
+
+.i-examples__text--berries {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/berries1.jpg);
+	}
+}
+
+.i-examples__text--nuts {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/nuts-seeds1.jpg);
+	}
+}
+
+.i-examples__text--fruits {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/fruits-1.jpg);
+	}
+}
+
+.i-examples__text--herbs {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/herbs-1.jpg);
+	}
+}
+
+.i-examples__text--meat {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/fishMeat-1.jpg);
+	}
+}
+
+.i-examples__text--vegetables {
+	@include mq($from: tablet-wide) {
+		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/vegetables-1.jpg);
+	}
+}
+
+
 
 .i-examples__card:hover .i-examples__text {
 
 	@include mq($from: tablet-wide) {
-		bottom: -74px;
+		bottom: -60px;
+	}
+
+	@include mq($from: desktop) {
+		bottom: -100px;
 	}
 }
 
