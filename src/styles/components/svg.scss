@@ -1,0 +1,9 @@
+.svg-hover {
+	fill: #323336;
+	transition: .3s ease-in-out;
+
+	&:hover {
+		fill: #e74a51;
+	}
+}
+

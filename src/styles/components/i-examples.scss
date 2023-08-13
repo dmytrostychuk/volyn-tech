@@ -2,11 +2,20 @@
 	padding-top: 40px;
 	padding-bottom: 40px;
 	background-color: #fafafa;
+	border-bottom: 1px solid #f2f2f2;
+	border-top: 1px solid #f2f2f2;
 }
 
 .i-examples__card-box {
+	margin-top: 50px;
 
 	@include mq($from: tablet) {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	@include mq($from: tablet-wide) {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -22,8 +31,6 @@
 	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
 	transition: 0.3s ease-in-out;
 
-	
-
 	@include mq($from: phablet) {
 		width: 60vw;
 		margin: 0 auto;
@@ -37,8 +44,7 @@
 
 	@include mq($from: tablet-wide) {
 		width: 27%;
-		margin: 5px;
-		margin-bottom: 15px;
+		margin: 15px;
 		border-radius: 20px 50px 20px 50px;
 
 		&:hover {
@@ -139,7 +145,6 @@
 .i-examples__text {
 	line-height: 1.4em;
 	color: #757575;
-
 	
 
 	@include mq($from: tablet) {
@@ -167,6 +172,7 @@
 		bottom: -400px;
 		padding-top: 100px;
 		font-size: 18px;
+		
 	}
 }
 
