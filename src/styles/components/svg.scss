@@ -7,3 +7,14 @@
 	}
 }
 
+.footer__link-svg, .footer__link-svg--social {
+	fill: #ffffff;
+	transition: .2s ease-in-out;
+}
+
+.footer__link-svg--social:hover {
+	fill: #e74a51;
+}
+
+
+

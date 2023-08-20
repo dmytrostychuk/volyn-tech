@@ -11,12 +11,48 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap"
     rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 </head>
 
 <body>
   <svg style="display: none">
+    <symbol id="instagram" viewBox="0 0 15 15">
+      <path
+        d="M7.5 5C6.11929 5 5 6.11929 5 7.5C5 8.88071 6.11929 10 7.5 10C8.88071 10 10 8.88071 10 7.5C10 6.11929 8.88071 5 7.5 5Z" />
+      <path fill-rule="evenodd" clip-rule="evenodd"
+        d="M4.5 0C2.01472 0 0 2.01472 0 4.5V10.5C0 12.9853 2.01472 15 4.5 15H10.5C12.9853 15 15 12.9853 15 10.5V4.5C15 2.01472 12.9853 0 10.5 0H4.5ZM4 7.5C4 5.567 5.567 4 7.5 4C9.433 4 11 5.567 11 7.5C11 9.433 9.433 11 7.5 11C5.567 11 4 9.433 4 7.5ZM11 4H12V3H11V4Z" />
+
+    </symbol>
+
+    <symbol id="facebook" viewBox="0 0 24 24">
+      <g>
+        <path
+          d="M22.676 0H1.324C.593 0 0 .593 0 1.324v21.352C0 23.408.593 24 1.324 24h11.494v-9.294H9.689v-3.621h3.129V8.41c0-3.099 1.894-4.785 4.659-4.785 1.325 0 2.464.097 2.796.141v3.24h-1.921c-1.5 0-1.792.721-1.792 1.771v2.311h3.584l-.465 3.63H16.56V24h6.115c.733 0 1.325-.592 1.325-1.324V1.324C24 .593 23.408 0 22.676 0" />
+      </g>
+    </symbol>
+    <symbol id="phone" viewBox="0 0 477.156 477.156">
+      <g>
+        <path d="M475.009,380.316l-2.375-7.156c-5.625-16.719-24.062-34.156-41-38.75l-62.688-17.125c-17-4.625-41.25,1.594-53.688,14.031
+          l-22.688,22.688c-82.453-22.28-147.109-86.938-169.359-169.375L145.9,161.94c12.438-12.438,18.656-36.656,14.031-53.656
+          l-17.094-62.719c-4.625-16.969-22.094-35.406-38.781-40.969L96.9,2.19c-16.719-5.563-40.563,0.063-53,12.5L9.962,48.659
+          C3.899,54.69,0.024,71.94,0.024,72.003c-1.187,107.75,41.063,211.562,117.281,287.781
+          c76.031,76.031,179.454,118.219,286.891,117.313c0.562,0,18.312-3.813,24.375-9.845l33.938-33.938
+          C474.946,420.878,480.571,397.035,475.009,380.316z" />
+      </g>
+    </symbol>
+
+    <symbol id="mail" viewBox="0 0 64 64">
+      <g>
+        <path
+          d="M63.125,9.977c-0.902-1.321-2.419-2.194-4.131-2.194H5.006c-1.676,0-3.158,0.842-4.067,2.117l31.16,25.982L63.125,9.977z" />
+        <path d="M0.006,14.328v36.889c0,2.75,2.25,5,5,5h53.988c2.75,0,5-2.25,5-5V14.461L32.099,41.09L0.006,14.328z" />
+      </g>
+    </symbol>
     <symbol id="product-bg" viewBox="0 0 817 759">
       <path
         d="M798 237.397C726.8 36.597 573 -6.00004 508 1.39707C443 8.79418 411 23.3971 372 91.3971C333 159.397 313 177.397 249 217.397C185 257.397 0 331.794 0 508.397C0 685 192 758.397 411 758.397C630 758.397 887 488.397 798 237.397Z">
@@ -318,62 +354,44 @@
     </section>
 
     <footer class="footer">
-      <div class="footer__bootom">
-        <div class="container">
-          <div class="info">
-            <div class="info__block info__menu">
-              <h5 class="info__title">Навігація</h5>
-              <ul>
-                <li class="info__item">
-                  <a class="info__link" href="services.html">Сушка</a>
-                </li>
-                <li class="info__item">
-                  <a class="info__link" href="about-us.html">Мангал</a>
-                </li>
-                <li class="info__item">
-                  <a class="info__link" href="contacts.html">Лампочки</a>
-                </li>
-
-              </ul>
-            </div>
-
-            <div class="info__block info__contact">
-              <h5 class="info__title">Наші контакти</h5>
-              <ul class="info__list">
-                <li class="info__item">
-                  <a class="link-social link--hover" href="tel:+380687945051">
-                    <svg class="link-social--svg" width="30" height="20">
-                      <use xlink:href="#phone"></use>
-                    </svg>
-                    +38 (096) 123 91 21
-                  </a>
-                </li>
-                <li class="info__item">
-                  <a class="link-social link--hover" href="tel:+380687945051">
-                    <svg class="link-social--svg" width="30" height="20">
-                      <use xlink:href="#phone"></use>
-                    </svg>
-                    +38 (099) 225 50 51
-                  </a>
-                </li>
-                <li class="info__item">
-                  <a href="mailto:lazerarmax@gmail.com" class="link-social link--hover">
-                    <svg class="link-social--svg" width="30" height="20">
-                      <use xlink:href="#mail"></use>
-                    </svg>
-                    lazer.armax@gmail.com
-                  </a>
-                </li>
-                <li class="info__item">
-                  <a href="https://www.facebook.com/armaxMG" class="link-social link--hover">
-                    <svg class="link-social--svg" width="30" height="20">
-                      <use xlink:href="#facebook"></use>
-                    </svg>
-                    facebook.com/armaxMG/
-                  </a>
-                </li>
-              </ul>
-            </div>
+      <div class="container">
+        <div class="footer__container">
+          <div class="footer__logo">
+            <h1 class="footer__title-logo"><a href="#" class="footer__title-logo--link">Volyn Tech</a></h1>
+            <p class="footer__text">надійна сушарка.</p>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Контакти</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item"><a href="tel:+380687945051" class="footer__link">
+                  <svg class="footer__link-svg" width="30" height="20">
+                    <use xlink:href="#phone"></use>
+                  </svg> +38 (068) 794 50 51</a></li>
+              <li class="footer__contact-item"><a href="tel:+380687945051" class="footer__link"><svg
+                    class="footer__link-svg" width="30" height="20">
+                    <use xlink:href="#phone"></use>
+                  </svg> Номер Вітальчіка</a></li>
+              <li class="footer__contact-item"><a href="mailto:volynTech@gmail.com" class="footer__link"><svg
+                    class="footer__link-svg" width="30" height="20">
+                    <use xlink:href="#mail"></use>
+                  </svg>volynTech@gmail.com</a></li>
+            </ul>
+          </div>
+          <div class="footer__block">
+            <h3 class="footer__title">Навігація</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__nav-item"><a href="#" class="footer__link">Сушарка</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__link">Сушарка</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__link">Сушарка</a></li>
+            </ul>
+          </div>
+          <div class="footer__block footer__block--social">
+            <a href="#" class="footer__link-social"><svg class="footer__link-svg--social" width="30" height="20">
+                <use xlink:href="#facebook"></use>
+              </svg></a>
+            <a href="#" class="footer__link-social"><svg class="footer__link-svg--social" width="30" height="20">
+                <use xlink:href="#instagram"></use>
+              </svg></a>
           </div>
         </div>
       </div>
