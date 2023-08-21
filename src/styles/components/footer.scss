@@ -5,8 +5,31 @@
 	font-size: 14px;
 }
 
+.footer__container {
+
+	@include mq($from: phablet) {
+		display: flex;
+		align-items: baseline;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	@include mq($from: tablet) {
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+
+	@include mq($from: tablet-wide) {
+		margin-bottom: 50px;
+	}
+}
+
 .footer__block {
 	margin: 60px 0;
+
+	@include mq($from: phablet) {
+		margin: 0 10px;
+	}
 }
 
 .footer__block--social {
@@ -54,6 +77,11 @@
 	&::first-letter {
 		color: #e74a51;
 	}
+
+	@include mq($from: phablet) {
+		margin-top: 0;
+	}
+	
  }
 
 .footer__contact-list {

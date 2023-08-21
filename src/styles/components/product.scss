@@ -97,30 +97,7 @@
 
 }
 
-.product__button {
-	font-size: 18px;
-	text-align: center;
-	padding: 10px 37px 10px 37px;
-	background-color: #689f38;
-	border: none;
-	border-radius: 5px;
-	color: #ffffff;
-	cursor: pointer;
-	transition: .3s;
 
-	@include mq($from: phablet) {
-		font-size: 20px;
-
-	}
-
-	@include mq($from: tablet) {
-		margin-top: 30px;
-    &:hover {
-			background-color: #81b848;
-			
-		}
-  }
-}
 
 .product__price-camera {
 	@include mq($from: tablet) {
