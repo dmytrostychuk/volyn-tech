@@ -431,6 +431,21 @@ ul {
   margin-top: auto;
 }
 
+.product__button {
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 37px 15px 37px;
+  background-color: #323336;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.product__button:hover {
+  background-color: rgba(50, 51, 54, 0.4941176471);
+}
+
 .header {
   z-index: 10;
   position: fixed;
@@ -859,18 +874,6 @@ ul {
   display: none;
 }
 
-.product__button {
-  font-size: 18px;
-  text-align: center;
-  padding: 10px 37px 10px 37px;
-  background-color: #689f38;
-  border: none;
-  border-radius: 5px;
-  color: #ffffff;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
 .i-examples {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -1083,6 +1086,9 @@ ul {
   .container {
     padding: 0 20px;
   }
+  .product__button {
+    font-size: 20px;
+  }
   .top-content__title {
     font-size: 9vw;
   }
@@ -1094,9 +1100,6 @@ ul {
   }
   .product__price {
     margin-top: 25px;
-  }
-  .product__button {
-    font-size: 20px;
   }
   .i-examples__card {
     width: 60vw;
@@ -1113,6 +1116,18 @@ ul {
     padding: 20px;
     box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
   }
+  .footer__container {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .footer__block {
+    margin: 0 10px;
+  }
+  .footer__title {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1121,6 +1136,12 @@ ul {
   }
   .mobile-none {
     display: block;
+  }
+  .product__button {
+    margin-top: 30px;
+  }
+  .product__button:hover {
+    background-color: #81b848;
   }
   .header__wrapper {
     display: flex;
@@ -1196,12 +1217,6 @@ ul {
     font-size: 37px;
     text-align: start;
   }
-  .product__button {
-    margin-top: 30px;
-  }
-  .product__button:hover {
-    background-color: #81b848;
-  }
   .product__price-camera {
     display: none;
   }
@@ -1246,6 +1261,10 @@ ul {
   }
   .i-characteristic__card {
     margin: 10px;
+  }
+  .footer__container {
+    margin: 0 auto;
+    max-width: 1000px;
   }
 }
 
@@ -1349,6 +1368,9 @@ ul {
   }
   .i-characteristic__text {
     font-size: 18px;
+  }
+  .footer__container {
+    margin-bottom: 50px;
   }
 }
 
