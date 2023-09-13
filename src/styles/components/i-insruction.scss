@@ -1,0 +1,25 @@
+.i-instruction {
+	margin: 60px auto;
+}
+
+.i-examples-instruction {
+	
+
+	@include mq($from: phablet) {
+		width: 60vw;
+		margin: 0 auto;
+		margin-top: 80px;
+	}
+}
+
+.i-examples-instruction__title {
+	font-size: 18px;
+	font-family: "Montserrat",sans-serif;
+	font-weight: 300;
+	color: #757575;
+	margin-top: 0;
+}
+
+.i-examples-instruction__title-span {
+	color: #e74a51;
+}
