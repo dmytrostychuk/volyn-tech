@@ -122,15 +122,17 @@
 
 
   <main class="main ">
+    <div class="din">
+      <section class="top-content rellax" data-rellax-speed="-10">
+        <div class="top-content__bg ">
+        </div>
+        <div class="top-content__text">
+          <h1 class=" top-content__title ">Продуктова сушильна камера</h1>
 
-    <section class="top-content rellax" data-rellax-speed="-6">
-      <div class="top-content__bg ">
-      </div>
-      <div class="top-content__text">
-        <h1 class=" top-content__title ">Продуктова сушильна камера</h1>
+        </div>
+      </section>
+    </div>
 
-      </div>
-    </section>
 
     <section class="product">
       <div class="container product__container">
@@ -214,8 +216,7 @@
 
           <div class="product__price">
             <span class="product__price-tablet">Ціна 25 000грн</span>
-            <button type="button" class="product__button">Купити
-              <span class="product__price-camera">за 25 000 грн</span></button>
+            <button type="button" class="modal-active button menu__btn">Замовити сушарку</button>
             <p class="product__text">
               Є в наявності
             </p>
@@ -315,21 +316,19 @@
           <h5 class="i-examples-instruction__title">Отримайте інструкцію
             температурних циклів
             для сировини <span class="i-examples-instruction__title-span">безкоштовно!</span> </h5>
+
           <div class="button-slip">
-            <a href="#" class="button-slip__link">
+            <button type="button" class="modal-active button-slip__link menu__btn">
               <div class="button-slip__link-text">Напишіть<br><span class="button-slip__link-span">нам</span></div>
               <div class="button-slip__link-box"></div>
 
 
-            </a>
+            </button>
           </div>
         </div>
       </div>
 
     </section>
-    <button type="button" class="menu__btn modal-active">
-      Let's Talk
-    </button>
     <section class="i-characteristic">
       <div class="container">
         <h1 class="section__title">Коротка технічна інформація</h1>
@@ -430,8 +429,8 @@
               звʼяжеться з вами</p>
 
             <form action="POST" class="modal__form">
-              <input type="text" name="" id="" placeholder="телефон або e-mail">
-              <button type="submit">Відправити запит</button>
+              <input class="modal__iput" type="text" name="" id="" placeholder="телефон або e-mail">
+              <button class="button button-modal" type="submit">Відправити запит</button>
             </form>
           </section>
         </div>

@@ -3,11 +3,11 @@
 	position: relative;
 	padding-top: 40px;
 	background-color: #ffffff;
-	margin-bottom: 60px;
+	padding-bottom: 60px;
 
 	@include mq($from: tablet) {
 		height: 600px;
-		margin-bottom: 50px;
+		padding-bottom: 50px;
   }
 }
 

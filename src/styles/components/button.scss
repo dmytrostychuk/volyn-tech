@@ -1,4 +1,4 @@
-.product__button {
+.button {
 	font-size: 18px;
 	text-align: center;
 	padding: 15px 37px 15px 37px;
@@ -10,7 +10,7 @@
 	transition: .3s;
 
 	&:hover {
-		background-color: #323336c7;
+		background-color: #81b848;
 	}
 
 	@include mq($from: phablet) {
@@ -22,7 +22,6 @@
 		margin-top: 30px;
     &:hover {
 			background-color: #81b848;
-			
 		}
   }
 }

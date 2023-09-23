@@ -24,22 +24,60 @@
 
 		@include mq($from: desktop) {
 			position: absolute;
-			max-width: 1000px;
+			max-width: 500px;
 		}
+	}
+
+	.modal__title {
+		text-align: center;
+		color: #323336;
+		font-size: 24px;
+		margin-top: 50px;
+	}
+
+	.modal__text {
+		text-align: center;
+		font-size: 18px;
+
+		@include mq($from: phablet) {
+			padding: 0 30px;
+		}
+		
 	}
 
 	.modal-content {
 		position: relative;
-		height: 200px;
 		background-color: #fff;
-		padding: 1rem 1.5rem;
+		padding: 5px 10px;
 		border-radius: 0.5rem;
 		overflow: auto;
 		@include mq($from: desktop) {
-			height: 200px;
 		}
 	}
 
+	.modal__form {
+		display: flex;
+		flex-direction: column;
+		margin-top: 30px;
+		margin-bottom: 20px;
+	}
+
+	.modal__iput {
+		
+		padding-bottom: 10px;
+		border: none;
+		width: 70%;
+		margin: 0 auto;
+		margin-bottom: 20px;
+		border-bottom: 1px solid #000;
+		background-color: inherit;
+		text-align: center;
+
+		&:focus {
+				outline: 0;
+		}
+		}
+	
 	.show-modal {
 		opacity: 1;
 		visibility: visible;
@@ -47,153 +85,12 @@
 		transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 	}
 
-	.modal__form {
-
-		@include mq($from: tablet) {
-			flex-direction: column;
-		}
-	}
-
-	.form__block {
-		margin: 0;
-		margin-top: 20px;
-
-		@include mq($from: phablet) {
-			display: flex;
-   		justify-content: space-between;
-			width: 70vw;
-			margin: 0 auto;
-			margin-top: 20px;
-    	align-items: center;
-		}
-
-		@include mq($from: desktop) {
-			max-width: 900px;
-		}
-
-		label {
-			font-size: 14px;
-			color: #263238;
-			padding-left: 10px;
-			text-align: center;
-			vertical-align: middle;
-
-			@include mq($from: phablet) {
-				font-size: 16px;
-			}
-
-			@include mq($from: tablet-wide) {
-				font-size: 20px;
-			}
-
-			@include mq($from: desktop) {
-				font-size: 20px;
-			}
-		}
-	}
-
-	.form__block-contact {
-
-		@include mq($from: phablet) {
-			align-items: inherit;
-			flex-direction: column;
-		}
-	}
-
-	.form__block-title {
-		margin-bottom: 0;
-		margin-top: 30px;
-		text-align: center;
-		padding-left: 10px;
-		font-size: 14px;
-			color: #8F95A5;
-
-		@include mq($from: phablet) {
-			font-size: 18px;
-			padding: 0;
-			margin-top: 30px;
-		}
-
-		@include mq($from: tablet-wide) {
-			font-size: 20px;
-		}
-
-		@include mq($from: desktop) {
-			font-size: 20px;
-		}
-	}
-
-	.modal__input {
-		margin-top: 10px;
-		margin-bottom: 0;
-
-		@include mq($from: phablet) {
-			width: 55vw;
-		}
-
-		@include mq($from: desktop) {
-			width: 85%;
-		}
-	}
-
-
-	.chain {
-		display: flex;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		margin-bottom: 20px;
-
-		@include mq($from: tablet) {
-			margin-top: 20px;
-		}
-	}
-
-	.chain__lable {
-		width: 40%;
-		margin-top: 30px;
-
-		@include mq($from: tablet) {
-			width: auto;
-		}
-	}
-
-	.chain__checkbox {
-		display: none;
-	}
-
-	.chain__checkbox:checked + .chain__text::after {
-		opacity: 1;
-		transform: scale(1);
-		transition: 0.5s;
-	}
-
-	.chain__text {
-		position: relative;
-		font-size: 20px;
-		transition: 0.5s;
-
-		img {
-			width: 40px;
-			height: 40px;
-
-			@include mq($from: phablet) {
-				width: 50px;
-				height: 50px;
-			}
-
-		}
-	}
-
-	.chain__checkbox:checked + .chain__text {
-		opacity: 0.3;
-	}
-
 	.close-button {
 		position: absolute;
 		width: 20px;
 		height: 20px;
-		top: 30px;
-		right: 20px;
+		top: 15px;
+		right: 15px;
 		padding: 0;
 		margin: 0;
 		border: none;
@@ -220,29 +117,3 @@
 			transform: rotate(-45deg);
 		}
 	}
-
-	.modal__btn {
-		height: 60px;
-		margin-top: 30px;
-		margin-bottom: 0;
-		
-		@include mq($from: phablet) {
-			position: relative;
-			align-items: center;
-			margin-top: 40px;
-		}
-
-		@include mq($from: tablet) {
-			height: 50px;
-		}	
-		
-		@include mq($from: desktop) {
-			height: 80px;
-		}
-	}
-		
-	
-
-	
-
-	

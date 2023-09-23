@@ -23,7 +23,7 @@ var rellax = new Rellax('.rellax', {
   center: false,
   wrapper: null,
   round: true,
-  vertical: true,
+  vertical: false,
   horizontal: false,
 });
 
@@ -60,7 +60,7 @@ window.addEventListener('scroll', function () {
 });
 
 var modal = document.querySelector('.modal');
-var trigger = document.querySelector('.modal-active');
+var triggers = document.querySelectorAll('.modal-active');
 var closeButton = document.querySelector('.close-button');
 
 function toggleModal() {
@@ -73,12 +73,6 @@ function toggleModal() {
   } else if (!modal.classList.contains('show-modal')) {
     document.body.classList.remove('lock');
   }
-
-  if (menuNav) {
-    menuNav.classList.remove('menu__nav-active');
-    burgerBtn.classList.remove('burger-btn-active');
-    menuBtn.classList.remove('menu__btn-active');
-  }
 }
 
 function windowOnClick(event) {
@@ -87,6 +81,11 @@ function windowOnClick(event) {
   }
 }
 
-trigger.addEventListener('click', toggleModal);
+triggers.forEach(function (trigger) {
+  trigger.addEventListener('click', toggleModal);
+});
+
+closeButton.addEventListener('click', toggleModal);
+window.addEventListener('click', windowOnClick);
 closeButton.addEventListener('click', toggleModal);
 window.addEventListener('click', windowOnClick);
