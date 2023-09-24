@@ -4,7 +4,7 @@
   </a>
 </h1>
 <p align="center">
-  <img src="![device@1x](https://github.com/dmytrostychuk/Armax/assets/72120575/24f8bbc6-d2c0-475b-97ec-91b7383115cd)">
+  <img src="https://github.com/dmytrostychuk/volyn-tech/assets/72120575/27325f23-cc3c-4471-ac97-be30a85bb10e">
 </p>
 <h2>
   Technologies what I used:
@@ -19,7 +19,6 @@
   <li>Sass</li>  
   <li>PixelPerfect</li>
   <li>Swiper</li>
-  <li>Animation</li>
-  <li>Gallery\fslightbox.com</li>
+  <li>Parallax effect</li>
   <li>Figma</li>
 </ul>
