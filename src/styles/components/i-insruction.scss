@@ -1,44 +1,38 @@
 .i-instruction {
-	margin: 60px auto;
+  margin: 60px auto;
 }
 
 .i-examples-instruction {
-	
+  @include mq($from: phablet) {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 80px;
+  }
 
-	@include mq($from: phablet) {
-		width: 60vw;
-		margin: 0 auto;
-		margin-top: 80px;
-	}
+  @include mq($from: tablet) {
+    display: flex;
+    align-items: center;
+  }
 
-	@include mq($from: tablet) {
-		display: flex;
-		align-items: center;
-	}
-	
-	@include mq($from: tablet-wide) {
-	}
+  @include mq($from: tablet-wide) {
+  }
 }
 
 .i-examples-instruction__title {
-	font-size: 18px;
-	font-family: "Montserrat",sans-serif;
-	font-weight: 300;
-	color: #757575;
-	margin-top: 0;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  color: #757575;
+  margin-top: 0;
 
-	@include mq($from: tablet-wide) {
-		margin-right: 40px;
-		padding-left: 10vw;
-		font-size: 22px;
-		width: 500px;
-	}
-
-	@include mq($from: tablet-wide) {
-	
-	}
+  @include mq($from: tablet-wide) {
+    margin-right: 40px;
+    padding-left: 10vw;
+    font-size: 22px;
+    width: 500px;
+  }
 }
 
 .i-examples-instruction__title-span {
-	color: #e74a51;
+  color: #e74a51;
 }

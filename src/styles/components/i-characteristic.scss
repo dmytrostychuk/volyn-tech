@@ -1,67 +1,66 @@
 .i-characteristic {
-	padding: 40px 0;
-	padding-bottom: 100px;
-	background-color: #fafafa;
+  padding: 40px 0;
+  padding-bottom: 100px;
+  background-color: #fafafa;
 }
 
 .i-characteristic__block {
-	margin-top: 50px;
+  margin-top: 50px;
 
-	@include mq($from: phablet) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	}
+  @include mq($from: phablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-	@include mq($from: tablet) {
-		justify-content: center;
-	}
+  @include mq($from: tablet) {
+    justify-content: center;
+  }
 
-	@include mq($from: tablet) {
-		justify-content: space-between;
-	}
+  @include mq($from: tablet) {
+    justify-content: space-between;
+  }
 }
 
 .i-characteristic__card {
-	text-align: center;
-	margin-top: 40px;
+  text-align: center;
+  margin-top: 40px;
 
-	@include mq($from: phablet) {
-		width: 40%;
-		padding: 20px;
-		box-shadow: rgba(0,0,0,.05) 0 6px 24px 0, rgba(0,0,0,.08) 0 0 0 1px;
-	}
+  @include mq($from: phablet) {
+    width: 40%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  }
 
-	@include mq($from: tablet) {
-		margin: 10px;
-	}
+  @include mq($from: tablet) {
+    margin: 10px;
+  }
 
-	@include mq($from: tablet-wide) {
-		margin: 0;
-		width: 20%;
-		padding: 20px;
-		box-shadow: rgba(0,0,0,.05) 0 6px 24px 0, rgba(0,0,0,.08) 0 0 0 1px;
-	}
+  @include mq($from: tablet-wide) {
+    margin: 0;
+    width: 20%;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0 6px 24px 0, rgba(0, 0, 0, 0.08) 0 0 0 1px;
+  }
 }
 
 .i-characteristic__title {
-	margin: 10px 0;
-	text-transform: uppercase;
-	letter-spacing: 1.8px;
-	font-size: 18px;
-	font-weight: 400;
+  margin: 10px 0;
+  text-transform: uppercase;
+  letter-spacing: 1.8px;
+  font-size: 18px;
+  font-weight: 400;
 
-	@include mq($from: desktop) {
-		font-size: 22px;
-	}
+  @include mq($from: desktop) {
+    font-size: 22px;
+  }
 }
 
 .i-characteristic__text {
-	line-height: 1.4em;
-    color: #757575;
+  line-height: 1.4em;
+  color: #757575;
 
-		@include mq($from: tablet-wide) {
-			font-size: 18px;
-		}
+  @include mq($from: tablet-wide) {
+    font-size: 18px;
+  }
 }
-

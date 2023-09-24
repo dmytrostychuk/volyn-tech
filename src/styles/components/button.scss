@@ -1,27 +1,27 @@
 .button {
-	font-size: 18px;
-	text-align: center;
-	padding: 15px 37px 15px 37px;
-	background-color: #323336;
-	border: none;
-	border-radius: 2px;
-	color: #ffffff;
-	cursor: pointer;
-	transition: .3s;
+  font-size: 18px;
+  text-align: center;
+  padding: 15px 37px 15px 37px;
+  background-color: #323336;
+  border: none;
+  border-radius: 2px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 0.3s;
 
-	&:hover {
-		background-color: #81b848;
-	}
+  &:hover {
+    background-color: #81b848;
+  }
 
-	@include mq($from: phablet) {
-		font-size: 20px;
+  @include mq($from: phablet) {
+    font-size: 20px;
+  }
 
-	}
+  @include mq($from: tablet) {
+    margin-top: 30px;
 
-	@include mq($from: tablet) {
-		margin-top: 30px;
     &:hover {
-			background-color: #81b848;
-		}
+      background-color: #81b848;
+    }
   }
 }

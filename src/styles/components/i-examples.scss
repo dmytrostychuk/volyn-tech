@@ -1,227 +1,272 @@
 .i-examples {
-	padding-top: 40px;
-	padding-bottom: 40px;
-	background-color: #fafafa;
-	border-bottom: 1px solid #f2f2f2;
-	border-top: 1px solid #f2f2f2;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #f2f2f2;
+  border-top: 1px solid #f2f2f2;
 }
 
 .i-examples__card-box {
-	margin-top: 50px;
+  margin-top: 50px;
 
-	@include mq($from: tablet) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+  @include mq($from: tablet) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 
-	@include mq($from: tablet-wide) {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: center;
-	}
+  @include mq($from: tablet-wide) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .i-examples__card {
-	position: relative;
-	margin: 0 auto;
-	margin-bottom: 30px;
-	overflow: hidden;
-	background-color: #ffffff;
-	box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
-	transition: 0.3s ease-in-out;
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  overflow: hidden;
+  background-color: #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+    rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  transition: 0.3s ease-in-out;
 
-	@include mq($from: phablet) {
-		width: 60vw;
-		margin: 0 auto;
-		margin-bottom: 30px;
-	}
+  @include mq($from: phablet) {
+    width: 60vw;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
 
-	@include mq($from: tablet) {
-		width: 35%;
-		margin: 5px;
-	}
+  @include mq($from: tablet) {
+    width: 35%;
+    margin: 5px;
+  }
 
-	@include mq($from: tablet-wide) {
-		width: 27%;
-		margin: 15px;
-		border-radius: 20px 50px 20px 50px;
+  @include mq($from: tablet-wide) {
+    width: 27%;
+    margin: 15px;
+    border-radius: 20px 50px 20px 50px;
 
-		&:hover {
-			box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px, rgb(0, 0, 0) 0px 8px 16px -8px;
-		}
-	}
+    &:hover {
+      box-shadow: rgb(0, 0, 0) 0px 13px 27px -5px,
+        rgb(0, 0, 0) 0px 8px 16px -8px;
+    }
+  }
 }
 
 .i-examples__container {
-	text-align: center;
+  text-align: center;
 }
 
 .i-examples__img {
-	position: relative;
-	object-fit: cover;
-	
-	@include mq($from: tablet) {
-		height: 100%;
-		object-fit: cover;
-	}
-	
-	img {
-			width: 100%;
-			height: 100%;
-		@include mq($from: tablet) {
-		}
-	}
+  position: relative;
+  object-fit: cover;
+
+  @include mq($from: tablet) {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    @include mq($from: tablet) {
+    }
+  }
 }
 
 .i-examples__img::before {
-	content: '';
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 98%;
-	background-image: linear-gradient(90deg,rgba(60,60,64,.7) 100%,#a6a6cd 100%,#00d4ff 100%);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 98%;
+  background-image: linear-gradient(
+    90deg,
+    rgba(60, 60, 64, 0.7) 100%,
+    #a6a6cd 100%,
+    #00d4ff 100%
+  );
   opacity: 0.4;
 }
 
 .i-examples__hover-block {
-	position: relative;
-	padding: 24px;
-	padding-top: 0px;
+  position: relative;
+  padding: 24px;
+  padding-top: 0px;
 
-	@include mq($from: tablet) {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		padding: 0;
-		background-color: rgba(60, 60, 64, 0.637);
-	}
+  @include mq($from: tablet) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(60, 60, 64, 0.637);
+  }
 
-	@include mq($from: tablet-wide) {
-		position: absolute;
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		padding: 0;
-		background-color: rgba(60, 60, 64, 0);
-		background-image: linear-gradient(90deg,rgba(60, 60, 64, 0.178) 100%,#a6a6cd 100%,#00d4ff 100%);
-	}
-	
+  @include mq($from: tablet-wide) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    background-color: rgba(60, 60, 64, 0);
+    background-image: linear-gradient(
+      90deg,
+      rgba(60, 60, 64, 0.178) 100%,
+      #a6a6cd 100%,
+      #00d4ff 100%
+    );
+  }
 }
 
 .i-examples__title {
-	font-size: 18px;
-	font-weight: 600;
-	text-align: center;
-	text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
 
-		@include mq($from: tablet) {
-			margin: 0;
-			padding: 5px;
-			padding-top: 15px;
-			color: #e74a51;
-	}
+  @include mq($from: tablet) {
+    margin: 0;
+    padding: 5px;
+    padding-top: 15px;
+    color: #e74a51;
+  }
 
-	@include mq($from: tablet-wide) {
-		z-index: 2;
-		position: absolute;
-		width: 100%;
-		color: #ffffff;
-		padding: 10px 0;
-		font-size: 16px;
-		letter-spacing: 1px;
-	}
+  @include mq($from: tablet-wide) {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
 
-	@include mq($from: desktop) {
-		font-size: 24px;
-		padding: 15px 0;
-	}
+  @include mq($from: desktop) {
+    font-size: 24px;
+    padding: 15px 0;
+  }
 }
 
 .i-examples__text {
-	line-height: 1.4em;
-	color: #757575;
-	
+  line-height: 1.4em;
+  color: #757575;
 
-	@include mq($from: tablet) {
-		padding: 5px;
-		margin-top: 0;
-		color: #fff;
-	}
+  @include mq($from: tablet) {
+    padding: 5px;
+    margin-top: 0;
+    color: #fff;
+  }
 
-	@include mq($from: tablet-wide) {
-		position: absolute;
-	bottom: -300px;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	color: #fff;
-	padding: 0px;
-	transition: .4s ease-in-out;
-	background-size: cover;
-	padding-top: 60px;
-	background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%);
-	
-	}
+  @include mq($from: tablet-wide) {
+    position: absolute;
+    bottom: -300px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    padding: 0px;
+    transition: 0.4s ease-in-out;
+    background-size: cover;
+    padding-top: 60px;
+    background-image: linear-gradient(
+      90deg,
+      rgba(60, 60, 64, 0.7) 100%,
+      rgba(166, 166, 205, 1) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+  }
 
-	@include mq($from: desktop) {
-		bottom: -400px;
-		padding-top: 100px;
-		font-size: 18px;
-		
-	}
+  @include mq($from: desktop) {
+    bottom: -400px;
+    padding-top: 100px;
+    font-size: 18px;
+  }
 }
 
 .i-examples__text--berries {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/berries1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/berries1.jpg);
+  }
 }
 
 .i-examples__text--nuts {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/nuts-seeds1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/nuts-seeds1.jpg);
+  }
 }
 
 .i-examples__text--fruits {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/fruits-1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/fruits-1.jpg);
+  }
 }
 
 .i-examples__text--herbs {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/herbs-1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/herbs-1.jpg);
+  }
 }
 
 .i-examples__text--meat {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/fishMeat-1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/fishMeat-1.jpg);
+  }
 }
 
 .i-examples__text--vegetables {
-	@include mq($from: tablet-wide) {
-		background-image: linear-gradient(90deg, rgba(60,60,64,0.7) 100%, rgba(166,166,205,1) 100%, rgba(0,212,255,1) 100%), url(../img/vegetables-1.jpg);
-	}
+  @include mq($from: tablet-wide) {
+    background-image: linear-gradient(
+        90deg,
+        rgba(60, 60, 64, 0.7) 100%,
+        rgba(166, 166, 205, 1) 100%,
+        rgba(0, 212, 255, 1) 100%
+      ),
+      url(../img/vegetables-1.jpg);
+  }
 }
-
-
 
 .i-examples__card:hover .i-examples__text {
+  @include mq($from: tablet-wide) {
+    bottom: -60px;
+  }
 
-	@include mq($from: tablet-wide) {
-		bottom: -60px;
-	}
-
-	@include mq($from: desktop) {
-		bottom: -100px;
-	}
+  @include mq($from: desktop) {
+    bottom: -100px;
+  }
 }
-
